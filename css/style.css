@@ -13,8 +13,7 @@ body {
 }
 
 p {
-	font-size: .95em;
-	margin-bottom: 1.8em;
+	font-size: 1em;
 }
 
 h2,
@@ -38,29 +37,152 @@ img {
 
 
 /* ================================= 
-  Base Element Styles
+  Base Layout Styles
 ==================================== */
 
-/* Navigation */
+/*--- Navigation ---*/
+
 .name {
+	font-size: 1.5em;
 	margin: 0;
+	font-weight: 900;
 }
 
-/* Layout Container */
-.container {
-	padding-left: 1em;
-	padding-right: 1em;
+.main-nav {
+	margin-top: 5px;
 }
+
+.name,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover,
+.col h3:hover {
+	color: #fed36e;
+}
+
+.main-nav li {
+	background: #fff;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+
+/*--- Layout Container ---*/
 
 .main-header {
-	background: #fafafa;
-	padding: 1em 0;
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
 
-.main-footer {
-	padding: 2em 0;
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.background-wrap {
 	background: #fafafa;
+	padding-bottom: 1.5em;
+	margin-bottom: 2em;
+}
+
+
+/*--- Page Elements Profile---*/
+
+.profile {
 	text-align: center;
+}
+
+.profile-image {
+	margin-top: 1.5em;
+	width: 70%;
+}
+
+.profile-description {
+	font-size: 1.25em;
+}
+
+.bolder-heading {
+	text-align: center;
+	font-weight: 900;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+
+/*--- Page Elements Portfolio---*/
+
+.col {
+	text-align: center;
+}
+
+.portfolio-img {
+	margin-bottom: 1.5em;
+	margin-top: 2em;
+}
+
+.portfolio-description {
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 1.1em;
+}
+
+/*--- Page Elements Footer---*/
+
+.contact-me {
+	text-align: center;
+	padding-top: 2.5em;
+	margin-top: 1.5em;
+	background: #fafafa;;
+}
+
+.phone,
+.email {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.contact-description {
+	font-size: 1.25em;
+	max-width: 600px;
+	margin: 1em auto;
+}
+
+.footer {
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+.name-footer {
+	float: left;
+	font-weight: bolder;
+}
+
+.back-to-top,
+.nav-footer {
+	float: right;
+	font-weight: bolder;
+}
+
+.nav-footer li {
+	float: left;
+	padding-left: 1em;
+	display: none;
+}
+
+.divider {
+	border-top: 1px solid lightgrey;
+	padding: 30px 0;
 }
 
 
@@ -69,10 +191,99 @@ img {
 ==================================== */
 
 @media(min-width: 769px) {
-	.container {
-		width: 70%;
-		margin: 0 auto;
-		max-width: 1000px;
+
+	.main-nav li {
+		background: none;
 	}
+
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col {
+		float: left;
+		width: 50%;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.background-wrap {
+		padding-bottom: 2.5em;
+	}
+
+	.profile-image {
+		width: 100%;
+	}
+
+	.profile {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.secondary-col {
+		width: 60%;
+		float: left;
+		text-align: left;
+	}
+
+	.primary-col {
+		width: 40%;
+		float: right;
+		padding-left: 2.5em;
+	}
+
+	.nav-footer {
+		float: right;
+		display: visible;
+  }
+
+  .nav-footer li {
+		display: inline-block;
+	}
+
+	.back-to-top {
+		display: none;
+	}
+
+
+/* ------ Clearfix ------ */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;		
+	}
+}
+
+@media (min-width: 1025px) {
+	
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.container {
+		max-width: 1150px;
+		width: 90%;
+	}
+
+	.col {
+		width: 33.33%
+	}
+
+	.secondary-col {
+		width: 55%;
+	}
+
+	.primary-col {
+		width: 45%;
+	}
+
 }
 
