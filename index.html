@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile-first Responsive Layout</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
   <body>
 
   <div class="background-wrap">
     <div class="container">
 
-      <header class="main-header">
+      <header id="home" class="main-header">
         <h1 class="name"><a href="#">Giuseppe Brandi</a></h1>
         <nav>
           <ul class="main-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav> 
       </header>
@@ -30,53 +31,65 @@
         <img class="profile-image" src="images/responsive-layout-profile.png" alt="profile image">
       </div>
       <div class="secondary-col">
-        <p class="profile-description">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and I am excited to put all my skills to use!</p>
+        <p class="profile-description">Hi! I'm a front-end developer who loves Responsive Design, CSS and JavaScript. I recently finished a degree in front-end web development at Treehouse and I am excited to put all my skills to use!</p>
       </div>
     </div>
   </div>
 
 
-  <h2 class="bolder-heading">Portfolio</h2>
+  <h2 id="portfolio" class="bolder-heading">Portfolio</h2>
 
   <div class="container clearfix">
     <div class="col">
-      <img src="images/portfolio-1.png" class="portfolio-img" alt="Marketing Page">
-      <h3>Marketing Page</h3>
-      <p class="portfolio-description">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+      <a href="#">
+        <img src="images/portfolio-1.png" class="portfolio-img" alt="Marketing Page">
+        <h3>Marketing Page</h3>
+        <p class="portfolio-description">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+      </a>
     </div>
 
     <div class="col">
-      <img src="images/portfolio-2.png" class="portfolio-img" alt="Search Page">
-      <h3>Search Page</h3>
-      <p class="portfolio-description">This project searches through a specific database to find information that the user is trying to look up.</p>
+      <a href="#">
+        <img src="images/portfolio-2.png" class="portfolio-img" alt="Search Page">
+        <h3>Search Page</h3>
+        <p class="portfolio-description">This project searches through a specific database to find information that the user is trying to look up.</p>
+      </a>
     </div>
 
     <div class="col">
-      <img src="images/portfolio-3.png" class="portfolio-img" alt="Travel App">
-      <h3>Travel App</h3>
-      <p class="portfolio-description">This project compares travel times based on different transportation methods and tells you the best one</p>
+      <a href="#">
+        <img src="images/portfolio-3.png" class="portfolio-img" alt="Travel App">
+        <h3>Travel App</h3>
+        <p class="portfolio-description">This project compares travel times based on different transportation methods and tells you the best one</p>
+      </a>
     </div>
 
     <div class="col">
-      <img src="images/portfolio-4.png" class="portfolio-img" alt="Map of Favorite Spots">
-      <h3>Map of Favorite Spots</h3>
-      <p class="portfolio-description">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+      <a href="#">
+        <img src="images/portfolio-4.png" class="portfolio-img" alt="Map of Favorite Spots">
+        <h3>Map of Favorite Spots</h3>
+        <p class="portfolio-description">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+      </a>
     </div>
 
     <div class="col">
-      <img src="images/portfolio-5.png" class="portfolio-img" alt="Photo Gallery">
-      <h3>Photo Gallery</h3>
-      <p class="portfolio-description">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+      <a href="#">
+        <img src="images/portfolio-5.png" class="portfolio-img" alt="Photo Gallery">
+        <h3>Photo Gallery</h3>
+        <p class="portfolio-description">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+      </a>
     </div>
 
     <div class="col">
-      <img src="images/portfolio-6.png" class="portfolio-img" alt="Calculator">
-      <h3>Calculator</h3>
-      <p class="portfolio-description">Someone can enter inthe numbers they want, and press thebig blue button and get the result.</p>
+      <a href="#">
+        <img src="images/portfolio-6.png" class="portfolio-img" alt="Calculator">
+        <h3>Calculator</h3>
+        <p class="portfolio-description">Someone can enter inthe numbers they want, and press thebig blue button and get the result.</p>
+      </a>
     </div> 
   </div>
 
-  <div class="contact-me">
+  <div id="contact" class="contact-me">
     <div class="container">
       <h3 class="bolder-heading">Contact</h3>
       <p class="contact-description">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
@@ -86,12 +99,12 @@
 
     <footer class="footer" >
       <div class="container clearfix divider">
-        <span class="name-footer"><a href="#">Giuseppe Brandi</a></span>
-        <span class="back-to-top"><a href="#">Back to Top</a></span>
+        <span class="name-footer"><a href="#home">Giuseppe Brandi</a></span>
+        <span class="back-to-top"><a href="#home">Back to Top</a></span>
         <ul class="nav-footer">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </footer>

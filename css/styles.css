@@ -43,9 +43,10 @@ img {
 /*--- Navigation ---*/
 
 .name {
-	font-size: 1.5em;
+	font-size: 1.8em;
 	margin: 0;
 	font-weight: 900;
+	font-family: 'Kaushan Script', cursive;
 }
 
 .main-nav {
@@ -67,7 +68,8 @@ img {
 }
 
 .main-nav a:hover,
-.col h3:hover {
+.col h3:hover,
+.footer a:hover {
 	color: #fed36e;
 }
 
@@ -166,6 +168,7 @@ img {
 .name-footer {
 	float: left;
 	font-weight: bolder;
+	font-family: 'Kaushan Script', cursive;
 }
 
 .back-to-top,
@@ -190,7 +193,7 @@ img {
   Media Queries
 ==================================== */
 
-@media(min-width: 769px) {
+@media(min-width: 768px) {
 
 	.main-nav li {
 		background: none;
@@ -240,7 +243,7 @@ img {
 
 	.nav-footer {
 		float: right;
-		display: visible;
+		visibility: visible;
   }
 
   .nav-footer li {
@@ -261,7 +264,7 @@ img {
 	}
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 	
 	.main-header {
 		flex-direction: row;
